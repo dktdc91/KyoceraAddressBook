@@ -1,0 +1,347 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\AddressBookApplication.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AddressBookApplication.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FAX Address Book Utility"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "FAX Address Book Utility, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG_APP DIALOGEX 0, 0, 383, 439
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FAX Address Book Utility"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add",IDC_BUTTON_ADD,7,233,60,14
+    PUSHBUTTON      "Edit",IDC_BUTTON_EDIT,73,233,60,14,WS_DISABLED
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,139,233,60,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT_NAME,14,288,149,14,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    EDITTEXT        IDC_EDIT_FAXNUMBER,14,319,149,14,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    EDITTEXT        IDC_EDIT_COMPANY,14,349,149,14,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    EDITTEXT        IDC_EDIT_DEPARTMENT,14,380,149,14,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    COMBOBOX        IDC_COMBO_SPEED,189,288,150,30,CBS_DROPDOWNLIST | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "ECM **",IDC_CHECK_ECM,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_GROUP | WS_TABSTOP,189,307,40,10
+    PUSHBUTTON      "OK",IDC_BUTTON_OK,224,396,60,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,299,396,60,14,WS_DISABLED
+    RTEXT           "Items:0",IDC_STATIC_ITEM_COUNT,249,232,128,8
+    LTEXT           "Name:",IDC_STATIC_NAME,14,278,58,8,WS_DISABLED
+    LTEXT           "FAX number:",IDC_STATIC_FAXNUMBER,14,308,58,8,WS_DISABLED
+    LTEXT           "Company: *",IDC_STATIC_COMPANY,14,339,58,8,WS_DISABLED
+    LTEXT           "Department: **",IDC_STATIC_DEPARTMENT,14,370,58,8,WS_DISABLED
+    LTEXT           "* This information will not be saved on the device.",IDC_STATIC_INFO1,21,398,184,8
+    LTEXT           "FAX communication speed:**",IDC_STATIC_SPEED,189,278,123,8,WS_DISABLED
+    LTEXT           "** This information will not be saved in the file.",IDC_STATIC_INFO2,196,320,173,8
+    GROUPBOX        "Contact",IDC_STATIC_CONTACT,7,265,370,155
+    LTEXT           "Address Book",IDC_STATIC_ADDRESSBOOK,7,32,58,8
+    CONTROL         "",IDC_STATIC_HORIZONTAL_LINE,"Static",SS_ETCHEDHORZ,7,26,370,1
+    CONTROL         "",IDC_LIST_ADDRESSVIEW,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,43,370,186
+END
+
+IDD_DIALOG_ADDGROUP DIALOGEX 0, 0, 320, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Group"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_GROUPNAME,7,20,151,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "",IDC_LIST_ALL_CONTACTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_GROUP | WS_TABSTOP,7,55,132,126
+    CONTROL         "",IDC_LIST_SELECTED_CONTACTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_GROUP | WS_TABSTOP,176,55,137,126
+    PUSHBUTTON      ">>",IDC_BUTTON_ADD,146,97,22,18,WS_DISABLED
+    PUSHBUTTON      "<<",IDC_BUTTON_REMOVE,146,117,22,18,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,181,193,66,14
+    PUSHBUTTON      "Cancel",IDCANCEL,247,193,66,14
+    LTEXT           "Group name:",IDC_STATIC,7,10,52,8
+    LTEXT           "All contacts:",IDC_STATIC,7,43,48,8
+    LTEXT           "Selected contacts:",IDC_STATIC,176,43,60,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,189,306,1
+END
+
+IDD_DIALOG_PROGRESS DIALOGEX 0, 0, 194, 77
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,18,180,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,56,50,14
+    LTEXT           "Retrieving from device...",IDC_STATIC_PROGRESS,7,34,162,8
+    LTEXT           "",IDC_STATIC_PROGRESS_STEP,169,34,13,8
+END
+
+IDD_DIALOG_BLOCKNUM DIALOGEX 0, 0, 242, 277
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blocked Numbers"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,170,256,59,14
+    CONTROL         "",IDC_LINE_HORZ_BOTTOM,"Static",SS_ETCHEDHORZ,0,252,242,1
+    CONTROL         "",IDC_LINE_HORZ_TOP,"Static",SS_ETCHEDHORZ,0,25,242,1
+    CONTROL         "Enable number blocking",IDC_CHECK_BLOCKING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,36,91,10
+    CONTROL         "Block all unknown numbers",IDC_CHECK_BLOCK_ALL,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,18,54,101,10
+    EDITTEXT        IDC_EDIT_BLOCKNUMBER,18,82,142,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "FAX number:",IDC_STATIC,19,71,42,8,WS_DISABLED
+    LTEXT           "Blocked numbers:",IDC_STATIC,12,104,57,8
+    PUSHBUTTON      "Add",IDC_BUTTON_BLOCKNUM_ADD,163,82,69,14,WS_DISABLED
+    PUSHBUTTON      "Delete",IDC_BUTTON_BLOCKNUM_DELETE,18,227,59,14,WS_DISABLED
+    CONTROL         "",IDC_LIST_NUMBERS,"SysListView32",LVS_ALIGNLEFT | WS_DISABLED | WS_BORDER | WS_TABSTOP,12,115,215,104
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Liteon"
+            VALUE "FileDescription", "Kyocera FAX Address Book"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AddressBookApplication.exe"
+            VALUE "LegalCopyright", "(c) Liteon.  All rights reserved."
+            VALUE "OriginalFilename", "AddressBookApplication.exe"
+            VALUE "ProductName", "Kyocera FAX Address Book Ultility"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_APP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 432
+    END
+
+    IDD_DIALOG_ADDGROUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG_BLOCKNUM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 270
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32771
+    BUTTON      ID_BUTTON32772
+    BUTTON      ID_BUTTON32773
+    BUTTON      ID_BUTTON32774
+    BUTTON      ID_BUTTON32775
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TOOLBAR      BITMAP                  "res\\toolbar.bmp"
+IDB_BITMAP_TOOLBAR_DISABLED BITMAP                  "res\\toolbar_disabled.bmp"
+IDB_BITMAP_CONTACT      BITMAP                  "res\\contact.bmp"
+IDB_BITMAP_GROUP        BITMAP                  "res\\group.bmp"
+IDB_BITMAP_BACKGROUND   BITMAP                  "res\\backgroup1.bmp"
+IDB_BITMAP_TOOLBARMASK  BITMAP                  "res\\toolbar_mask.bmp"
+IDB_BITMAP_BLOCKEDNUM_TOOLBAR BITMAP                  "res\\blocked_number_toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FAX Address Book Utility..."
+    IDS_TOOLBAR_NEW         "&New"
+    IDS_TOOLBAR_OPEN        "&Open"
+    IDS_TOOLBAR_SAVE        "&Save"
+    IDS_TOOLBAR_SAVEAS      "Save &as..."
+    IDS_TOOLBAR_LOADFROMDEVICE "&Load from device"
+    IDS_TOOLBAR_SAVETODEVICE "Save &to device"
+    IDS_TOOLBAR_ADDGROUP    "Add &group..."
+    IDS_TOOLBAR_EDITGROUP   "&Edit group..."
+    IDS_TOOLBAR_DELETEDUPLICATES "&Delete duplicates"
+    IDS_TOOLBAR_BLOCKNUMBERS "&Block  numbers..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLBAR_HELP        "&Help"
+    IDS_APP_WINDOWTITLE     "FAX Address Book Utility"
+    IDS_ERROR_CONNECT       "Aconnection error has occurred.Verify that the device is properly connected and the communicaton settings are corrent."
+    IDS_PROGRESS_RETRIEVING "Retrieving from device..."
+    IDS_PROGRESS_SAVING     "Saving to device..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_GROUPNAME     "Enter a valid group name."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEVICE_LOAD         "Do you want to overwrite all current entries?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\AddressBookApplication.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
