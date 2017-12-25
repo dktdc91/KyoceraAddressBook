@@ -14,8 +14,9 @@
 * 支持打印机数据导出到本地。
 * 支持添加/删除/修改/成员信息，并同步本地或打印机。
 * 支持分组，支持组成员管理。
+* 仅支持Windows （XP或以上）。
 
-## 相关依赖
+## 依赖
 * 依赖打印机驱动dll，驱动在[Drivers](https://github.com/newdebug/KyoceraAddressBook/tree/master/Drivers)目录下。当前提供的驱动适用于Perry Dell E525W打印机。
 
 ## 如何编译
@@ -28,12 +29,12 @@
 
 ## 项目说明
 * AdressBook是核心库，用于地址薄数据的读写管理，优先编译出lib库，项目中默认编译出静态的lib，以用于应用程序引用。
-	* 引入模块：AddressBook.h/EntryItem.h/AbstractModel.h
+	* 引入模块：AddressBook.h/EntryItem.h/AbstractModel.h。
 	* 抽象模块AbstractModel被应用程序的View控件引用，以便显示数据，项目中已实现一个具体的Model，可以从AbstractModel扩展自定义的model。
 * KyoceraApp是GUI应用程序，生成可执行文件，基于MFC实现，需引入AddressBook生成的AddressBook.lib库。
 * Test模块是测试AddressBook各功能的。
-* Drivers 目录存放打印机的驱动dll
-* Include 目录存放AddressBook的头文件AddressBook.h/EntryItem.h/AbstractModel.h
+* Drivers 目录存放打印机的驱动dll。
+* Include 目录存放AddressBook的头文件AddressBook.h/EntryItem.h/AbstractModel.h。
 * Docs 目录存放项目的设计文档，UML，MVC实现模式，应用程序界面截图等。
 
 ## 版权
